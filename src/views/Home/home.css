@@ -1,15 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
 .home {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  background-color: var(--background-color);
+  color: var(--page-title);
+  text-align: center;
+}
+
+.downIcon {
+  rotate: 180deg;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.imageDev {
+  width: 450px;
+  height: 450px;
+}
+
+.mainDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 90vh;
+}
+
+.secondDiv {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.secondDiv p {
+  margin-bottom: 30px;
+}
+
+.secondDiv a {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  padding: 1rem;
+}
+
+.secondDiv a:hover {
+  color: var(--purple-main);
+}
+
+.mainTitle {
+  font-size: 6rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #c38fe8 0%, #818cf8 100%);
+  background-size: 100;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@-webkit-keyframes go-down {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes go-down {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.downIcon {
+  -webkit-animation: go-down 2.0s ease-in-out infinite;
+          animation: go-down 2.0s ease-in-out infinite;
 }
 /*# sourceMappingURL=home.css.map */

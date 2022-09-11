@@ -1,8 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
 .home {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    background-color: var(--background-color);
+    color: var(--page-title);
+    text-align: center;
+}
+
+.downIcon {
+    rotate: 180deg;
+    color: rgba($color: #fff, $alpha: 0.5);
+}
+
+.imageDev {
+    width: 450px;
+    height: 450px;
+
+}
+.mainDiv {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90vh;
+}
+.secondDiv {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    p {
+        margin-bottom: 30px;
+    }
+    a {
+        color: rgba($color: #fff, $alpha: 0.5);
+        transition: .2s ease-in;
+        padding: 1rem;
+    }
+    a:hover {
+        color: var(--purple-main);
+    }
+}
+
+.mainTitle {
+    font-size: 6rem;
+    font-weight: bold;
+    background:linear-gradient(
+                  135deg,
+                  rgba(195,143,232,1) 0%,
+                  rgba(129,140,248,1) 100%
+                );
+                background-size:100;
+                -webkit-background-clip:text;
+                -moz-background-clip:text;
+                -webkit-text-fill-color:transparent;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+@keyframes go-down {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.downIcon {
+    animation: go-down 2.0s ease-in-out infinite;
 }

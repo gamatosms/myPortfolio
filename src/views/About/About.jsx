@@ -4,7 +4,7 @@ import './about.css'
 export default function About() {
     return (
         <div className="about" id="about">
-            <h1>Sobre</h1>
+            <h3 className="pageTitle">Sobre</h3>
         </div>
     )
 }
