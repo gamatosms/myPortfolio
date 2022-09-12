@@ -9,7 +9,7 @@
 
 .downIcon {
     rotate: 180deg;
-    color: rgba($color: #fff, $alpha: 0.5);
+    color: var(--page-title);
 }
 
 .imageDev {
@@ -33,7 +33,7 @@
         margin-bottom: 30px;
     }
     a {
-        color: rgba($color: #fff, $alpha: 0.5);
+        color: var(--page-title);
         transition: .2s ease-in;
         padding: 1rem;
     }

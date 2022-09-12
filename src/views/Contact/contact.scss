@@ -6,6 +6,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+
     main {
         width: 80%;
         height: 100vh;
@@ -13,21 +14,25 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        div{
+
+        div {
             width: 90%;
             height: 90%;
             border-radius: 40px;
         }
-        h1{
+
+        h1 {
             font-size: 3rem;
             padding: 1em;
         }
-        .contactForm{
+
+        .contactForm {
             display: flex;
             align-items: center;
             flex-direction: column;
             margin: 20px;
-            input{
+
+            input {
                 width: 30%;
                 height: 40px;
                 margin: 1em;
@@ -35,12 +40,18 @@
                 padding-left: 15px;
                 border-radius: 20px;
                 border: none;
-                background-color: rgba($color: #fff, $alpha: 0.05);
+                background-color: var(--transparent-white);
                 transition: .2s ease;
                 color: white;
                 font-size: 1rem;
             }
-            textarea{
+            
+            input:focus {
+                outline-style: none;
+                outline: 2.5px solid var(--purple-main);
+            }
+
+            textarea {
                 width: 30%;
                 height: 100px;
                 margin: 1em;
@@ -48,11 +59,16 @@
                 padding-left: 15px;
                 border-radius: 20px;
                 border: none;
-                background-color: rgba($color: #fff, $alpha: 0.05);
+                background-color: var(--transparent-white);
                 transition: .2s ease;
                 color: white;
                 font-size: 1rem;
             }
+            textarea:focus {
+                outline-style: none;
+                outline: 2.5px solid var(--purple-main);
+            }
+
             button {
                 margin: 1em;
                 padding: 10px;
@@ -65,15 +81,18 @@
                 cursor: pointer;
                 transition: .2s ease-in-out;
             }
-            button:hover{
+
+            button:hover {
                 opacity: .8;
             }
         }
-        .iconNav a{
+
+        .iconNav a {
             color: rgba($color: #fff, $alpha: .5);
             transition: .2s ease-in-out;
             margin: 1em;
         }
+
         .iconNav a:hover {
             color: var(--purple-main);
         }

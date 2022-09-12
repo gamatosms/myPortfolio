@@ -1,7 +1,9 @@
+@import "rsuite/dist/rsuite.css";
 :root {
 	--background-color: #292929;
 	--purple-main: rgb(129, 140, 248);
-	--page-title: rgba(255,255,255,0.5)
+	--page-title: rgba(255,255,255,0.5);
+	--transparent-white: rgba(255,255,255,0.05);;
 }
 
 html, body, div, span, applet, object, iframe,
