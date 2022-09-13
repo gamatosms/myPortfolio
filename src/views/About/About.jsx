@@ -8,7 +8,7 @@ export default function About() {
             <h3 className="pageTitle">About</h3>
             <main>
                 <section>
-                    <h1>Hi, I'm Gabriel. <br />Nice to meet you.</h1>
+                    <h1>Hi, I'm <span>Gabriel</span>. <br />Nice to meet you.</h1>
                     <h3>I'm a software developer based in São Paulo, Brazil. 🌍</h3>
                     <p>Since 2019, I've been turning code into solutions. When I'm not coding you will find me gaming, reading, or enjoying a beautiful sunset.</p>
                 </section>

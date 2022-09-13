@@ -25,6 +25,10 @@
             font-size: 3rem;
             padding: 1em;
         }
+        hr{
+            width: 20%;
+            margin-bottom: 3rem;
+        }
 
         .contactForm {
             display: flex;
@@ -33,12 +37,12 @@
             margin: 20px;
 
             input {
-                width: 30%;
+                width: 60%;
                 height: 40px;
                 margin: 1em;
                 padding: 5px;
                 padding-left: 15px;
-                border-radius: 20px;
+                border-radius: 10px;
                 border: none;
                 background-color: var(--transparent-white);
                 transition: .2s ease;
@@ -52,12 +56,12 @@
             }
 
             textarea {
-                width: 30%;
+                width: 60%;
                 height: 100px;
                 margin: 1em;
                 padding: 15px;
                 padding-left: 15px;
-                border-radius: 20px;
+                border-radius: 10px;
                 border: none;
                 background-color: var(--transparent-white);
                 transition: .2s ease;
@@ -97,4 +101,23 @@
             color: var(--purple-main);
         }
     }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        padding: .1em !important;
+    }
+    .contactForm {
+        input {
+            width: 90% !important;
+        }
+
+        textarea {
+            width: 90% !important;
+        }
+
+        button {
+            width: 35% !important;
+        }
+  }
 }

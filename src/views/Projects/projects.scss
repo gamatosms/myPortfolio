@@ -14,7 +14,7 @@
         align-items: center;
         justify-content: center;
         .projectPanel{
-            width: 60%;
+            width: 80%;
             text-align: start;
             background-color: var(--transparent-white);
             :nth-child(1){
@@ -44,9 +44,48 @@
                         font-weight: 400;
                         margin-bottom: 10px;
                     }
+                    button{
+                        display: flex;
+                        flex-direction: row;
+                        background-color: var(--purple-main);
+                        border-radius: 5px;
+                     }
+                     button:hover {
+                        opacity: 0.8;
+                     }
                 }
             }
-            
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .panelContent {
+        flex-direction: column !important;
+        img{
+            width: 70% !important;
+            height: 350px;
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects main {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .projects main {
+        width: 100% !important;
+    }
+    .projectPanel {
+        width: 90% !important;
+        .panelContent img{
+                width: 80% !important;
+                height: 350px;
+                align-self: center;
         }
     }
 }
