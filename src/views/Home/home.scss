@@ -37,8 +37,14 @@
         transition: .2s ease-in;
         padding: 1rem;
     }
-    a:hover {
-        color: var(--purple-main);
+    .linkIcon:hover {
+        color: rgb(75, 152, 240);
+    }
+    .gitIcon:hover{
+        color: aliceblue;
+    }
+    .instaIcon:hover{
+        color: rgb(197, 56, 110);
     }
 }
 

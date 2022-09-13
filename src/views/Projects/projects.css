@@ -59,8 +59,8 @@
 }
 
 .projects main .projectPanel :nth-child(1) .panelContent img {
-  width: 280px;
-  height: 200px;
+  width: 30%;
+  height: 250px;
 }
 
 .projects main .projectPanel :nth-child(1) .panelContent .panelInfo {

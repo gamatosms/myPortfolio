@@ -19,7 +19,7 @@ export default function Projects() {
                             <img src={panela} alt="" />
                             <section className="panelInfo">
                                 <span className="stacks">Wordpress</span>
-                                <p>Blog desenvolvido em wordpress para um projeto de extensão para alunas do curso de nutrição na unifesp baixada Santista.</p>
+                                <p>Blog developed using wordpress for an extension project for students of the nutrition course at Unifesp Santos.</p>
                                 <button><a className="visitLink" href="https://panelaaberta.unifesp.br/" target="_blank"><BiLinkExternal size="30px" /></a></button>
                             </section>
                         </div>
@@ -29,8 +29,8 @@ export default function Projects() {
                             <img src={detect} alt="" />
                             <section className="panelInfo">
                                 <span className="stacks">React • TensorFlow • MongoDB</span>
-                                <p>Blog desenvolvido em wordpress para um projeto de extensão para alunas do curso de nutrição na unifesp baixada Santista.</p>
-                                <button><a className="visitLink" href="https://panelaaberta.unifesp.br/" target="_blank"><BiLinkExternal size="30px" /></a></button>
+                                <p>Platform developed using an artificial intelligence that is able to recognize LIBRAS (Brazilian sign language) to help children's literacy during the pandemic.</p>
+                                <button><a className="visitLink" href="https://github.com/gaamatoss/LibrasDetection" target="_blank"><BiLinkExternal size="30px" /></a></button>
                             </section>
                         </div>
                     </Panel>
@@ -39,8 +39,8 @@ export default function Projects() {
                             <img src={stopsort} alt="" />
                             <section className="panelInfo">
                                 <span className="stacks">HTML • CSS • Bootstrap</span>
-                                <p>Blog desenvolvido em wordpress para um projeto de extensão para alunas do curso de nutrição na unifesp baixada Santista.</p>
-                                <button><a className="visitLink" href="https://panelaaberta.unifesp.br/" target="_blank"><BiLinkExternal size="30px" /></a></button>
+                                <p>Sorter of letters to play STOP (Brazilian typical game).</p>
+                                <button><a className="visitLink" href="https://stopsort-gaamatoss.vercel.app/" target="_blank"><BiLinkExternal size="30px" /></a></button>
                             </section>
                         </div>
                     </Panel>
@@ -49,8 +49,8 @@ export default function Projects() {
                             <img src={todo} alt="" />
                             <section className="panelInfo">
                                 <span className="stacks">HTML • CSS • Tailwind</span>
-                                <p>Blog desenvolvido em wordpress para um projeto de extensão para alunas do curso de nutrição na unifesp baixada Santista.</p>
-                                <button><a className="visitLink" href="https://panelaaberta.unifesp.br/" target="_blank"><BiLinkExternal size="30px" /></a></button>
+                                <p>A simple to-do list.</p>
+                                <button><a className="visitLink" href="https://justtodo-gaamatoss.vercel.app/" target="_blank"><BiLinkExternal size="30px" /></a></button>
                             </section>
                         </div>
                     </Panel>

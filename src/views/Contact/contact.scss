@@ -28,6 +28,7 @@
         hr{
             width: 20%;
             margin-bottom: 3rem;
+            opacity: .5;
         }
 
         .contactForm {
@@ -97,8 +98,11 @@
             margin: 1em;
         }
 
-        .iconNav a:hover {
-            color: var(--purple-main);
+        .linkIcon:hover {
+            color: rgb(75, 152, 240);
+        }
+        .instaIcon:hover{
+            color: rgb(197, 56, 110);
         }
     }
 }

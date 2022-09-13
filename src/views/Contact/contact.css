@@ -43,6 +43,7 @@
 .contact main hr {
   width: 20%;
   margin-bottom: 3rem;
+  opacity: .5;
 }
 
 .contact main .contactForm {
@@ -124,8 +125,12 @@
   margin: 1em;
 }
 
-.contact main .iconNav a:hover {
-  color: var(--purple-main);
+.contact main .linkIcon:hover {
+  color: #4b98f0;
+}
+
+.contact main .instaIcon:hover {
+  color: #c5386e;
 }
 
 @media only screen and (max-width: 450px) {

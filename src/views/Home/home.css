@@ -56,8 +56,16 @@
   padding: 1rem;
 }
 
-.secondDiv a:hover {
-  color: var(--purple-main);
+.secondDiv .linkIcon:hover {
+  color: #4b98f0;
+}
+
+.secondDiv .gitIcon:hover {
+  color: aliceblue;
+}
+
+.secondDiv .instaIcon:hover {
+  color: #c5386e;
 }
 
 .mainTitle {

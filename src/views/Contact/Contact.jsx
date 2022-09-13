@@ -12,13 +12,13 @@ export default function Contact() {
                     <form className="contactForm" action="">
                         <input placeholder="Name:" type="text" />
                         <input placeholder="E-mail:" type="text" />
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="messageArea" placeholder="Type your message" id="message" cols="40" rows="10"></textarea>
                         <button type="submit">Send</button>
                     </form>
                     <hr />
                     <nav className="iconNav">
                         <a className="linkIcon" href="https://www.linkedin.com/in/gaamatoss/" target="_blank"><AiFillLinkedin size="40px" /></a>
-                        <a className="gitIcon" href="https://instagram.com/gaamatoss" target="_blank"><AiOutlineInstagram size="40px" /></a>
+                        <a className="instaIcon" href="https://instagram.com/gaamatoss" target="_blank"><AiOutlineInstagram size="40px" /></a>
                     </nav>
                 </div>
             </main>
