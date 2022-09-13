@@ -1,6 +1,6 @@
 import React from "react";
 import './contact.css'
-import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/Ai'
+import { AiFillLinkedin, AiOutlineInstagram } from '/node-modules/react-icons/ai'
 import emailjs from "@emailjs/browser"
 
 export default function Contact() {
