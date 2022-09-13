@@ -1,12 +1,11 @@
 import React from "react";
 import './projects.css'
 import { BiLinkExternal } from 'react-icons/Bi'
-import Card from '../../components/Card/Card'
 import panela from '../../assets/panela.png'
 import todo from '../../assets/todo.png'
 import stopsort from '../../assets/stopsort.png'
 import detect from '../../assets/detect.png'
-import { Panel, PanelGroup, Placeholder } from 'rsuite';
+import { Panel, PanelGroup } from 'rsuite';
 
 export default function Projects() {
     return (
