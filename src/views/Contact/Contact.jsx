@@ -9,10 +9,12 @@ export default function Contact() {
             <main>
                 <div>
                     <h1 className="mainTitle">Reach me out!</h1>
-                    <form className="contactForm" action="">
-                        <input placeholder="Name:" type="text" />
-                        <input placeholder="E-mail:" type="text" />
-                        <textarea name="messageArea" placeholder="Type your message" id="message" cols="40" rows="10"></textarea>
+                    <form className="contactForm" action="https://formsubmit.co/gsilva505.gs@gmail.com" method="POST">
+                        <input placeholder="Name:" name="text" type="text" required />
+                        <input type="hidden" name="_subject" value="New submission in your site!" />
+                        <input placeholder="E-mail:" name="email" type="email" required />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <textarea name="messageArea" placeholder="Type your message" id="message" cols="40" rows="10" required />
                         <button type="submit">Send</button>
                     </form>
                     <hr />
