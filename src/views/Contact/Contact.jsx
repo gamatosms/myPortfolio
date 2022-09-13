@@ -9,7 +9,7 @@ export default function Contact() {
             <main>
                 <div>
                     <h1 className="mainTitle">Reach me out!</h1>
-                    <form className="contactForm" action="https://formsubmit.co/gsilva505.gs@gmail.com" method="POST">
+                    <form className="contactForm" action="https://formsubmit.co/d755fce713d81c4da109e83d55997b39" method="POST">
                         <input placeholder="Name:" name="text" type="text" required />
                         <input type="hidden" name="_subject" value="New submission in your site!" />
                         <input placeholder="E-mail:" name="email" type="email" required />
