@@ -1,19 +1,40 @@
 import React from "react";
 import './contact.css'
-import { AiFillLinkedin, AiOutlineInstagram } from '/node-modules/react-icons/ai'
+import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
+import { Message, useToaster } from 'rsuite';
 import emailjs from "@emailjs/browser"
 
 export default function Contact() {
+
+    const typeSuccess = 'success';
+    const typeError = 'error';
+    const placement = 'topEnd';
+    const toaster = useToaster();
+
+    const messageSuccess = (
+        <Message showIcon type={typeSuccess}>
+            {typeSuccess}: Message Sent.
+        </Message>
+    );
+
+    const messageError = (
+        <Message showIcon type={typeError}>
+            {typeError}: Message not sent.
+        </Message>
+    );
+
 
     function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm("service_m72338m", "template_os8nmhe", e.target, "Guxq_2nJBsHyIEr0I")
             .then(function () {
-                alert('SUCCESS!');
-            }, function (error) {
-                alert('FAILED...', error);
+                toaster.push(messageSuccess, { placement })
+                e.target.reset();
+            }, function (e) {
+                toaster.push(messageError, { placement })
+                console.log(e);
+                e.target.reset();
             });
-        e.target.reset();
     }
 
     return (
