@@ -7,7 +7,6 @@ export default function Contact() {
 
     function sendEmail(e) {
         e.preventDefault();
-        // these IDs from the previous steps
         emailjs.sendForm("service_m72338m", "template_os8nmhe", e.target, "Guxq_2nJBsHyIEr0I")
             .then(function () {
                 alert('SUCCESS!');
