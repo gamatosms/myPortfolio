@@ -8,7 +8,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         /^node:.*/,
-        "react-icons: react-icons/Ai"
+        "react-icons: /node_modules/react-icons"
       ]
     }
   }

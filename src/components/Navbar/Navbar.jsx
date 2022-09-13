@@ -1,8 +1,8 @@
 import React from "react";
 import './navbar.css'
-import { AiOutlineHome, AiOutlineMessage } from 'react-icons/Ai'
-import { BsPerson } from 'react-icons/Bs'
-import { RiComputerLine } from 'react-icons/Ri'
+import { AiOutlineHome, AiOutlineMessage } from '/node_modules/react-icons/ai'
+import { BsPerson } from 'react-icons/bs'
+import { RiComputerLine } from 'react-icons/ri'
 
 export default function Navbar() {
     return (

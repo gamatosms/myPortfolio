@@ -1,7 +1,7 @@
 import React from "react";
 import './home.css'
-import { TbArrowBigUpLines } from 'react-icons/Tb'
-import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from 'react-icons/Ai'
+import { TbArrowBigUpLines } from '/node_modules/react-icons/tb'
+import { AiFillLinkedin, AiFillGithub, AiOutlineInstagram } from '/node_modules/react-icons/ai'
 import { motion } from 'framer-motion'
 
 export default function Home() {

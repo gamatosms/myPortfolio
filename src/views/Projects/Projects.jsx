@@ -1,6 +1,6 @@
 import React from "react";
 import './projects.css'
-import { BiLinkExternal } from 'react-icons/Bi'
+import { BiLinkExternal } from '/node_modules/react-icons/bi'
 import panela from '../../assets/panela.png'
 import todo from '../../assets/todo.png'
 import stopsort from '../../assets/stopsort.png'
