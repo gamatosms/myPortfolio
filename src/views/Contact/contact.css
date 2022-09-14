@@ -22,12 +22,7 @@
 }
 .contact main h1 {
   font-size: 3rem;
-  padding: 1em;
-}
-.contact main hr {
-  width: 20%;
-  margin-bottom: 3rem;
-  opacity: 0.5;
+  padding-top: 0.5rem;
 }
 .contact main .contactForm {
   display: flex;

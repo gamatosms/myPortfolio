@@ -52,7 +52,7 @@ export default function Contact() {
                         {isLoading ? "" : (<button type="submit">Send</button>)}
                         {isLoading ? (loadSender) : ""}
                     </form>
-                    <hr />
+                    <span>or</span>
                     <nav className="iconNav">
                         <a className="linkIcon" href="https://www.linkedin.com/in/gaamatoss/" target="_blank"><AiFillLinkedin size="40px" /></a>
                         <a className="instaIcon" href="https://instagram.com/gaamatoss" target="_blank"><AiOutlineInstagram size="40px" /></a>
