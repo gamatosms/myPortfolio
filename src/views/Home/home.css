@@ -18,102 +18,77 @@
 }
 
 .mainDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 80vh;
 }
 
 .secondDiv {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 .secondDiv p {
   margin-bottom: 30px;
 }
-
 .secondDiv a {
   color: var(--page-title);
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
   padding: 1rem;
 }
-
 .secondDiv .linkIcon:hover {
-  color: #4b98f0;
+  color: rgb(75, 152, 240);
 }
-
 .secondDiv .gitIcon:hover {
   color: aliceblue;
 }
-
 .secondDiv .instaIcon:hover {
-  color: #c5386e;
+  color: rgb(197, 56, 110);
 }
 
 .mainTitle {
   font-size: 6rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #c38fe8 0%, #818cf8 100%);
+  background: linear-gradient(135deg, rgb(195, 143, 232) 0%, rgb(129, 140, 248) 100%);
   background-size: 100;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @-webkit-keyframes go-down {
   0% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes go-down {
   0% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 .downIcon {
-  -webkit-animation: go-down 2.0s ease-in-out infinite;
-          animation: go-down 2.0s ease-in-out infinite;
+  -webkit-animation: go-down 2s ease-in-out infinite;
+          animation: go-down 2s ease-in-out infinite;
 }
 
 @media screen and (max-width: 440px) {
   .mainTitle {
     font-size: 4.5rem;
   }
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

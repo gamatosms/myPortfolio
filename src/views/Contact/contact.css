@@ -4,62 +4,37 @@
   background-color: var(--background-color);
   color: var(--page-title);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .contact main {
   width: 80%;
   height: 100vh;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: center;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .contact main div {
   width: 90%;
   height: 90%;
   border-radius: 40px;
 }
-
 .contact main h1 {
   font-size: 3rem;
   padding: 1em;
 }
-
 .contact main hr {
   width: 20%;
   margin-bottom: 3rem;
-  opacity: .5;
+  opacity: 0.5;
 }
-
 .contact main .contactForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   margin: 20px;
 }
-
 .contact main .contactForm input {
   width: 60%;
   height: 40px;
@@ -69,17 +44,14 @@
   border-radius: 10px;
   border: none;
   background-color: var(--transparent-white);
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+  transition: 0.2s ease;
   color: white;
   font-size: 1rem;
 }
-
 .contact main .contactForm input:focus {
   outline-style: none;
   outline: 2.5px solid var(--purple-main);
 }
-
 .contact main .contactForm textarea {
   width: 60%;
   height: 100px;
@@ -89,17 +61,14 @@
   border-radius: 10px;
   border: none;
   background-color: var(--transparent-white);
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+  transition: 0.2s ease;
   color: white;
   font-size: 1rem;
 }
-
 .contact main .contactForm textarea:focus {
   outline-style: none;
   outline: 2.5px solid var(--purple-main);
 }
-
 .contact main .contactForm button {
   margin: 1em;
   padding: 10px;
@@ -110,32 +79,26 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-
 .contact main .contactForm button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
-
 .contact main .iconNav a {
   color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   margin: 1em;
 }
-
 .contact main .linkIcon:hover {
-  color: #4b98f0;
+  color: rgb(75, 152, 240);
 }
-
 .contact main .instaIcon:hover {
-  color: #c5386e;
+  color: rgb(197, 56, 110);
 }
 
 @media only screen and (max-width: 450px) {
   h1 {
-    padding: .1em !important;
+    padding: 0.1em !important;
   }
   .contactForm input {
     width: 90% !important;
@@ -146,5 +109,4 @@
   .contactForm button {
     width: 35% !important;
   }
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */

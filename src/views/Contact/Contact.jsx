@@ -1,40 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import './contact.css'
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
-import { Message, useToaster, Divider } from 'rsuite';
+import { Message, useToaster, Loader } from 'rsuite';
 import emailjs from "@emailjs/browser"
 
 export default function Contact() {
 
-    const typeSuccess = 'success';
-    const typeError = 'error';
-    const placement = 'topEnd';
+    const placement = 'topCenter';
     const toaster = useToaster();
 
     const messageSuccess = (
-        <Message showIcon type={typeSuccess}>
-            {typeSuccess}: Message Sent.
+        <Message showIcon type='success'>
+            Message Sent.
         </Message>
     );
 
     const messageError = (
-        <Message showIcon type={typeError}>
-            {typeError}: Message not sent.
+        <Message showIcon type='error'>
+            Unable to send your message.
         </Message>
     );
 
+    const loadSender = <Loader content="Sending..." speed="normal" vertical />
+    const [isLoading, setIsLoading] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
+        setIsLoading(true)
         emailjs.sendForm("service_m72338m", "template_os8nmhe", e.target, "Guxq_2nJBsHyIEr0I")
             .then(function () {
+                setIsLoading(false)
                 toaster.push(messageSuccess, { placement })
                 e.target.reset();
             }, function (e) {
                 toaster.push(messageError, { placement })
                 console.log(e);
                 e.target.reset();
-            });
+            })
     }
 
     return (
@@ -47,7 +49,8 @@ export default function Contact() {
                         <input placeholder="Name:" name="name" type="text" required />
                         <input placeholder="E-mail:" name="email" type="email" required />
                         <textarea name="message" placeholder="Type your message" id="message" cols="40" rows="10" required />
-                        <button type="submit">Send</button>
+                        {isLoading ? "" : (<button type="submit">Send</button>)}
+                        {isLoading ? (loadSender) : ""}
                     </form>
                     <hr />
                     <nav className="iconNav">

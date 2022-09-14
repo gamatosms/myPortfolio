@@ -8,9 +8,9 @@ export default function mobileNav() {
 
     const [isOpen, setIsOpen] = useState(false)
     const hamburguerIcon = <BiMenuAltRight className="hamburguer"
-        size='40px' onClick={() => setIsOpen(!isOpen)} />
+        size='50px' onClick={() => setIsOpen(!isOpen)} />
     const closeIcon = <CgClose className="close"
-        size='40px' onClick={() => setIsOpen(!isOpen)} />
+        size='50px' onClick={() => setIsOpen(!isOpen)} />
 
     const closeMbNav = () => setIsOpen(false)
     const animateFrom = { opacity: 0, y: -20 }
@@ -21,7 +21,7 @@ export default function mobileNav() {
         <nav className="mb__nav">
             {isOpen ? closeIcon : hamburguerIcon}
             {isOpen &&
-                <ul isMobile={true} onClick={closeMbNav}>
+                <ul onClick={closeMbNav}>
                     <motion.li initial={animateFrom} animate={animateTo} transition={{ delay: 0.20 }}>
                         <a href="#home">Home</a>
                     </motion.li>

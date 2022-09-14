@@ -51,7 +51,6 @@
         display: flex;
         align-items: center;
     }
-
     .mb__nav ul {
         display: flex;
         flex-direction: column;
@@ -77,7 +76,7 @@
 
     .hamburguer {
         position: fixed;
-        top: 5%;
+        top: 2.5%;
         left: 5%;
         cursor: pointer;
         color: white;
@@ -88,7 +87,7 @@
 
     .close {
         position: fixed;
-        top: 5%;
+        top: 2.5%;
         left: 5%;
         cursor: pointer;
         color: white;
