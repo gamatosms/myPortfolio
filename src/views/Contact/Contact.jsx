@@ -1,7 +1,7 @@
 import React from "react";
 import './contact.css'
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
-import { Message, useToaster } from 'rsuite';
+import { Message, useToaster, Divider } from 'rsuite';
 import emailjs from "@emailjs/browser"
 
 export default function Contact() {

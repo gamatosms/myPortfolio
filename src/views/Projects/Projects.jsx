@@ -12,7 +12,7 @@ export default function Projects() {
         <div className="projects" id="projects">
             <h3 className="pageTitle">Projects</h3>
             <main>
-                <PanelGroup className="projectPanel" accordion defaultActiveKey={1} bordered>
+                <PanelGroup className="projectPanel" accordion bordered>
                     <Panel header="Panela Aberta" eventKey={1} id="panel1">
                         <div className="panelContent">
                             <img src={panela} alt="" />

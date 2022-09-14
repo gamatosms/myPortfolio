@@ -4,76 +4,121 @@
   background-color: var(--background-color);
   color: var(--page-title);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .projects main {
   width: 80%;
   height: 100vh;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .projects main .projectPanel {
   width: 80%;
   text-align: start;
   background-color: var(--transparent-white);
 }
+
 .projects main .projectPanel :nth-child(1) {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 1.3rem;
   margin: 2px 0px;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent img {
   width: 30%;
   height: 250px;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent .panelInfo {
   padding: 1em;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent .stacks {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
+  font-size: .8rem;
   margin: 15px 0px;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent p {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 10px;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: var(--purple-main);
   border-radius: 5px;
 }
+
 .projects main .projectPanel :nth-child(1) .panelContent button:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 1024px) {
   .panelContent {
-    flex-direction: column !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   .panelContent img {
     width: 70% !important;
     height: 350px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   .projects main {
     width: 100% !important;
   }
 }
+
 @media screen and (max-width: 460px) {
   .projects main {
     width: 100% !important;
@@ -84,6 +129,9 @@
   .projectPanel .panelContent img {
     width: 80% !important;
     height: 350px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-}/*# sourceMappingURL=projects.css.map */
+}
+/*# sourceMappingURL=projects.css.map */
