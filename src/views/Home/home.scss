@@ -52,8 +52,8 @@
     font-size: 6rem;
     font-weight: bold;
     background:linear-gradient(
-                  135deg,
-                  rgba(195,143,232,1) 0%,
+                  120deg,
+                  rgb(207, 179, 228) 0%,
                   rgba(129,140,248,1) 100%
                 );
                 background-size:100;
@@ -61,7 +61,7 @@
                 -moz-background-clip:text;
                 -webkit-text-fill-color:transparent;
     padding: 15px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: Inter, sans-serif;;
 }
 
 @keyframes go-down {

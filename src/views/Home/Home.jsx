@@ -13,7 +13,7 @@ export default function Home() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8 }} >
                     <h1 className="mainTitle">Gabriel Matos</h1>
-                    <p>FullStack Developer</p>
+                    <p>Software Developer</p>
                     <div className="iconDiv">
                         <a className="linkIcon" href="https://www.linkedin.com/in/gaamatoss/" target="_blank"><AiFillLinkedin size="40px" /></a>
                         <a className="gitIcon" href="https://github.com/gaamatoss" target="_blank"><AiFillGithub size="40px" /></a>

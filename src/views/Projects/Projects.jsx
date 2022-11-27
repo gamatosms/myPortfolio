@@ -5,14 +5,14 @@ import panela from '../../assets/panela.png'
 import todo from '../../assets/todo.png'
 import stopsort from '../../assets/stopsort.png'
 import detect from '../../assets/detect.png'
-import { Panel, PanelGroup } from 'rsuite';
+import { Panel,PanelGroup } from 'rsuite';
 
 export default function Projects() {
     return (
         <div className="projects" id="projects">
             <h3 className="pageTitle">Projects</h3>
             <main>
-                <PanelGroup className="projectPanel" accordion bordered>
+                <PanelGroup className="projectPanel" accordion >
                     <Panel header="Panela Aberta" eventKey={1} id="panel1">
                         <div className="panelContent">
                             <img src={panela} alt="" />
