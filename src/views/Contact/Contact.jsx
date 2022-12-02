@@ -48,7 +48,7 @@ export default function Contact() {
                     <form className="contactForm" onSubmit={sendEmail}>
                         <input placeholder="Name:" name="name" type="text" required />
                         <input placeholder="E-mail:" name="email" type="email" required />
-                        <textarea name="message" placeholder="Type your message" id="message" cols="40" rows="10" required />
+                        <textarea name="message" placeholder="Type your message:" id="message" cols="40" rows="10" required />
                         {isLoading ? "" : (<button type="submit">Send</button>)}
                         {isLoading ? (loadSender) : ""}
                     </form>
