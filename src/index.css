@@ -1,7 +1,7 @@
 @import "rsuite/dist/rsuite.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 :root {
-	--background-color: #292929;
+	--background-color: #1b1b1b;
 	--purple-main: rgb(129, 140, 248);
 	--page-title: rgba(255,255,255,0.5);
 	--transparent-white: rgba(255,255,255,0.05);;

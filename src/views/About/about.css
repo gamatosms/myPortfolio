@@ -67,33 +67,33 @@
 }
 
 .devImg {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   -webkit-animation: go-down 5s ease-in-out infinite;
           animation: go-down 5s ease-in-out infinite;
 }
 
 @-webkit-keyframes go-down {
   0% {
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
   50% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
 }
 
 @keyframes go-down {
   0% {
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
   50% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
 }
 .skillsSection {

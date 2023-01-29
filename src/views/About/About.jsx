@@ -1,6 +1,6 @@
 import React from "react";
 import './about.css'
-import devImg from "../../assets/cartonDev.png"
+import devImg from "../../assets/avatarMe.png"
 import resume from "../../assets/Resume.pdf"
 
 export default function About() {

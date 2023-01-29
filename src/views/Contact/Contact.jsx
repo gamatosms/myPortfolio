@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser"
 
 export default function Contact() {
 
-    const placement = 'topCenter';
+    const placement = 'topStart';
     const toaster = useToaster();
 
     const messageSuccess = (
