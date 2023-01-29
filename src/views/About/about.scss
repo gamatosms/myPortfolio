@@ -56,6 +56,7 @@
                 border-radius: 10px;
                 cursor: pointer;
                 transition: .2s ease-in-out;
+                box-shadow: 0px 7px 15px 4px rgba(0,0,0,0.3);
                 a{
                     color: #fff;
                     text-decoration: none;
@@ -81,6 +82,8 @@
                 height: 450px;
     border-radius: 63% 37% 61% 39% / 35% 63% 37% 65%;
     animation: go-down 5.0s ease-in-out infinite;
+    box-shadow: 0px 0px 15px 4px #111;
+
 }
 .devImg {
     width: 450px;

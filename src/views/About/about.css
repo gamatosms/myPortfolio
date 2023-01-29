@@ -55,6 +55,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  box-shadow: 0px 7px 15px 4px rgba(0, 0, 0, 0.3);
 }
 .about main section button a {
   color: #fff;
@@ -74,6 +75,7 @@
   border-radius: 63% 37% 61% 39%/35% 63% 37% 65%;
   -webkit-animation: go-down 5s ease-in-out infinite;
           animation: go-down 5s ease-in-out infinite;
+  box-shadow: 0px 0px 15px 4px #111;
 }
 
 .devImg {
