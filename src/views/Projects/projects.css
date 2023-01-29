@@ -32,7 +32,7 @@
   flex-direction: row;
 }
 .projects main .projectPanel :nth-child(1) .panelContent img {
-  width: 30%;
+  width: 40%;
   height: 250px;
 }
 .projects main .projectPanel :nth-child(1) .panelContent .panelInfo {

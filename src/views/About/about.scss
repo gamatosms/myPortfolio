@@ -46,11 +46,12 @@
             }
             button {
                 margin: 1em;
-                padding: 10px;
+                padding: 15px;
                 max-width: 180px;
                 background-color: var(--purple-main);
                 color: #fff;
-                font-size: 1rem;
+                font-size: 1.2rem;
+                font-weight: bold;
                 border: none;
                 border-radius: 10px;
                 cursor: pointer;
@@ -70,36 +71,32 @@
         }
     }
 }
-
-.devImg {
-    width: 500px;
-    height: 500px;
+.imgBorder {
+    background:linear-gradient(
+                  135deg,
+                  rgba(195,143,232,1) 0%,
+                  rgba(129,140,248,1) 100%
+                );
+                width: 450px;
+                height: 450px;
+    border-radius: 63% 37% 61% 39% / 35% 63% 37% 65%;
     animation: go-down 5.0s ease-in-out infinite;
+}
+.devImg {
+    width: 450px;
+    height: 450px;
+    border-radius: 63% 37% 61% 39% / 35% 63% 37% 65%;
 }
 
 @keyframes go-down {
     0% {
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     50% {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(30px);
-    }
-}
-
-.skillsSection {
-    width: 100%;
-    section ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        li img{
-            padding: 15px;
-            width: 60px;
-            height: 60px;
-        }
+        transform: translateY(20px);
     }
 }
 

@@ -14,7 +14,7 @@ export default function About() {
                     <p>Since 2019, I've been turning code into solutions. <br/>When I'm not coding you will find me gaming, reading, or enjoying a beautiful sunset.</p>
                     <button className="btn__download"><a href={resume} download="Resume">Download CV</a></button>
                 </section>
-                <div>
+                <div className="imgBorder">
                     <img className="devImg" src={devImg} alt="Image" />
                 </div>
             </main>

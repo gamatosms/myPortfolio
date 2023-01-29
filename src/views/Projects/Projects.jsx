@@ -38,7 +38,7 @@ export default function Projects() {
                             <img src={stopsort} alt="" />
                             <section className="panelInfo">
                                 <span className="stacks">HTML • CSS • Bootstrap</span>
-                                <p>Sorter of letters to play STOP (Brazilian typical game).</p>
+                                <p>Sorter of letters to play STOP.</p>
                                 <button><a className="visitLink" href="https://stopsort-gaamatoss.vercel.app/" target="_blank"><BiLinkExternal size="30px" /></a></button>
                             </section>
                         </div>
@@ -48,7 +48,7 @@ export default function Projects() {
                             <img src={todo} alt="" />
                             <section className="panelInfo">
                                 <span className="stacks">HTML • CSS • Tailwind</span>
-                                <p>A simple to-do list.</p>
+                                <p>A simple to-do list app.</p>
                                 <button><a className="visitLink" href="https://justtodo-gaamatoss.vercel.app/" target="_blank"><BiLinkExternal size="30px" /></a></button>
                             </section>
                         </div>
