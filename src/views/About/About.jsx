@@ -1,7 +1,7 @@
 import React from "react";
 import './about.css'
 import devImg from "../../assets/avatarMe.png"
-import resume from "../../assets/Resume.pdf"
+import resume from "../../assets/Gabriel-Resume.pdf"
 import {AiOutlineCloudDownload} from 'react-icons/ai'
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
                     <h1>Hi, I'm <span>Gabriel</span>. <br />Nice to meet you.</h1>
                     <h3>I'm a software developer based in São Paulo, Brazil. 🌍</h3>
                     <p>Since 2019, I've been turning code into solutions. <br/>When I'm not coding you will find me gaming, reading, or enjoying a beautiful sunset.</p>
-                    <button className="btn__download"><AiOutlineCloudDownload size='30px' style={{marginRight:'5px'}}/><a href={resume} download="Resume">Download CV</a></button>
+                    <button className="btn__download"><a href={resume} download="Gabriel-Resume">Download CV</a><AiOutlineCloudDownload size='30px' style={{marginLeft:'5px'}}/></button>
                 </section>
                 <div className="imgBorder">
                     <img className="devImg" src={devImg} alt="Image" />
