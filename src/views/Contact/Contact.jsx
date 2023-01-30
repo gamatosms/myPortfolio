@@ -21,7 +21,7 @@ export default function Contact() {
         </Message>
     );
 
-    const loadSender = <Loader content="Sending..." speed="normal" vertical />
+    const loadSender = <Loader content="Sending..." speed="slow" size="md" vertical />
     const [isLoading, setIsLoading] = useState(false)
 
     function sendEmail(e) {
@@ -49,7 +49,7 @@ export default function Contact() {
                         <input placeholder="Name:" name="name" type="text" required />
                         <input placeholder="E-mail:" name="email" type="email" required />
                         <textarea name="message" placeholder="Type your message:" id="message" cols="40" rows="10" required />
-                        {isLoading ? "" : (<button type="submit">Send<AiOutlineSend size='20px'/></button>)}
+                        {isLoading ? "" : (<button type="submit">Send <AiOutlineSend size='20px' style={{marginLeft:'5px'}}/></button>)}
                         {isLoading ? (loadSender) : ""}
                     </form>
                     <span>or</span>
