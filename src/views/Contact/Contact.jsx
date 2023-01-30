@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './contact.css'
-import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
+import { AiFillLinkedin, AiOutlineInstagram, AiOutlineSend } from 'react-icons/ai'
 import { Message, useToaster, Loader } from 'rsuite';
 import emailjs from "@emailjs/browser"
 
@@ -49,7 +49,7 @@ export default function Contact() {
                         <input placeholder="Name:" name="name" type="text" required />
                         <input placeholder="E-mail:" name="email" type="email" required />
                         <textarea name="message" placeholder="Type your message:" id="message" cols="40" rows="10" required />
-                        {isLoading ? "" : (<button type="submit">Send</button>)}
+                        {isLoading ? "" : (<button type="submit">Send<AiOutlineSend size='20px'/></button>)}
                         {isLoading ? (loadSender) : ""}
                     </form>
                     <span>or</span>
