@@ -4,7 +4,7 @@ import './footer.css'
 export default function Footer() {
     return (
         <div className="footer">
-            <p>Gabriel Matos © 2023</p>
+            <p>© 2023 Gabriel Matos</p>
         </div>
     )
 }
