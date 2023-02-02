@@ -5,8 +5,8 @@ import { BsPerson } from 'react-icons/bs'
 import { RiComputerLine } from 'react-icons/ri'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { CgClose } from 'react-icons/cg'
-import { motion } from "framer-motion"
 import { Tooltip, Whisper } from 'rsuite';
+import Fade from 'react-reveal/Fade';
 
 export default function Navbar() {
 
@@ -16,8 +16,6 @@ export default function Navbar() {
     const closeIcon = <CgClose className="close"
         size='50px' onClick={() => setIsOpen(!isOpen)} />
     const closeMbNav = () => setIsOpen(false)
-    const animateFrom = { opacity: 0, y: -20 }
-    const animateTo = { opacity: 1, y: 0 }
     
     return (
         <div>
@@ -43,20 +41,14 @@ export default function Navbar() {
             <nav className="mb__nav">
             {isOpen ? closeIcon : hamburguerIcon}
             {isOpen &&
+                    <Fade left cascade>
                 <ul onClick={closeMbNav}>
-                    <motion.li initial={animateFrom} animate={animateTo} transition={{ delay: 0.20 }}>
-                        <a href="#home">Home</a>
-                    </motion.li>
-                    <motion.li initial={animateFrom} animate={animateTo} transition={{ delay: 0.25 }}>
-                        <a href="#about">About</a>
-                    </motion.li>
-                    <motion.li initial={animateFrom} animate={animateTo} transition={{ delay: 0.30 }}>
-                        <a href="#projects">Projects</a>
-                    </motion.li>
-                    <motion.li initial={animateFrom} animate={animateTo} transition={{ delay: 0.35 }}>
-                        <a href="#contact">Contact</a>
-                    </motion.li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                    </Fade>
             }
         </nav>
         </div>

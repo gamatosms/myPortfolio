@@ -3,6 +3,7 @@ import './contact.css'
 import { AiFillLinkedin, AiOutlineInstagram, AiOutlineSend } from 'react-icons/ai'
 import { Message, useToaster, Loader } from 'rsuite';
 import emailjs from "@emailjs/browser"
+import Fade from 'react-reveal/Fade';
 
 export default function Contact() {
 
@@ -43,6 +44,7 @@ export default function Contact() {
         <div className="contact" id="contact">
             <h3 className="pageTitle">Contact</h3>
             <main>
+                <Fade left cascade>
                 <div>
                     <h1 className="mainTitle">Reach me out!</h1>
                     <form className="contactForm" onSubmit={sendEmail}>
@@ -58,6 +60,7 @@ export default function Contact() {
                         <a className="instaIcon" href="https://instagram.com/gaamatoss" target="_blank"><AiOutlineInstagram size="40px" /></a>
                     </nav>
                 </div>
+                </Fade>
             </main>
         </div>
     )
