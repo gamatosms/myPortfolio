@@ -25,7 +25,7 @@ export default function Projects() {
             picture={panela}
             project="Panela Aberta"
             stacks="Wordpress"
-            link="https://stopsort-gaamatoss.vercel.app/"
+            link="https://panelaaberta.unifesp.br/"
           />
           <Card
             picture={stopsort}
