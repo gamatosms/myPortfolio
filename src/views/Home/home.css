@@ -61,17 +61,6 @@
   font-family: Inter, sans-serif;
 }
 
-@-webkit-keyframes go-down {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @keyframes go-down {
   0% {
     transform: translateY(30px);
@@ -83,8 +72,7 @@
   }
 }
 .downIcon {
-  -webkit-animation: go-down 2s ease-in-out infinite;
-          animation: go-down 2s ease-in-out infinite;
+  animation: go-down 2s ease-in-out infinite;
 }
 
 @media screen and (max-width: 440px) {

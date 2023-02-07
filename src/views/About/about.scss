@@ -86,13 +86,25 @@
   border-radius: 63% 37% 61% 39% / 35% 63% 37% 65%;
   animation: go-down 5s ease-in-out infinite;
   box-shadow: 0px 0px 15px 4px #111;
+  -webkit-animation: go-down 5s ease-in-out infinite;
+  animation: go-down 5s ease-in-out infinite;
 }
 .devImg {
   width: 450px;
   height: 450px;
   border-radius: 63% 37% 61% 39% / 35% 63% 37% 65%;
 }
-
+@-webkit-keyframes go-down {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
 @keyframes go-down {
   0% {
     transform: translateY(20px);
@@ -106,6 +118,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .imgBorder,
   .devImg {
     width: 300px;
     height: 300px;
@@ -113,6 +126,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  .imgBorder,
   .devImg {
     width: 250px;
     height: 250px;
@@ -137,6 +151,7 @@
   }
   main div {
     width: 100%;
+    .imgBorder,
     .devImg {
       display: none;
     }
