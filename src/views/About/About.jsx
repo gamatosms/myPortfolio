@@ -4,6 +4,7 @@ import devImg from "../../assets/avatarMe.png";
 import resume from "../../assets/Gabriel-Resume.pdf";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
       <h3 className="pageTitle">About</h3>
       <main>
         <section>
-          <Fade top>
+          <Fade left>
             <h1>
               Hi, I'm <span>Gabriel</span>. <br />
               Nice to meet you.
@@ -33,11 +34,11 @@ export default function About() {
             </button>
           </Fade>
         </section>
-        <Fade bottom>
+        <Bounce right>
           <div className="imgBorder">
             <img className="devImg" src={devImg} alt="Image" />
           </div>
-        </Fade>
+        </Bounce>
       </main>
     </div>
   );
