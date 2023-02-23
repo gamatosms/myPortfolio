@@ -10,8 +10,8 @@ export default function About() {
     <div className="about" id="about">
       <h3 className="pageTitle">About</h3>
       <main>
-        <Fade left>
-          <section>
+        <section>
+          <Fade left>
             <h1>
               Hi, I'm <span>Gabriel</span>. <br />
               Nice to meet you.
@@ -22,7 +22,7 @@ export default function About() {
               When I'm not coding you will find me gaming, reading, or enjoying
               a beautiful sunset.
             </p>
-            <button className="btn__download">
+            <button className="btn-download">
               <a href={resume} download="Gabriel-Resume">
                 Download CV
               </a>
@@ -31,13 +31,15 @@ export default function About() {
                 style={{ marginLeft: "5px" }}
               />
             </button>
-          </section>
-        </Fade>
-        <Fade right>
-          <div className="imgBorder">
-            <img className="devImg" src={devImg} alt="Image" />
-          </div>
-        </Fade>
+          </Fade>
+        </section>
+        <div className="img-safe">
+          <Fade right>
+            <div className="img-background">
+              <img className="img-dev" src={devImg} alt="Image" />
+            </div>
+          </Fade>
+        </div>
       </main>
     </div>
   );
