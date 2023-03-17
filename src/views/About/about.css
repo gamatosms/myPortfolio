@@ -67,7 +67,7 @@
   text-decoration: none;
 }
 .about main section button:hover {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 .about main div {
   width: auto;

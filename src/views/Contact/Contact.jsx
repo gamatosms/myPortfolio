@@ -60,7 +60,9 @@ export default function Contact() {
       <main>
         <Fade left cascade>
           <div>
-            <h1 className="main-title">Reach me out!</h1>
+            <h1 className="main-title">
+              <span>Reach me out!</span>
+            </h1>
             <form className="contactForm" onSubmit={sendEmail}>
               <input placeholder="Name:" name="name" type="text" required />
               <input placeholder="E-mail:" name="email" type="email" required />
