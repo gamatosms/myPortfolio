@@ -22,12 +22,6 @@ export default function Projects() {
             link="https://github.com/gaamatoss/LibrasDetection"
           />
           <Card
-            picture={panela}
-            project="Panela Aberta"
-            stacks="Wordpress"
-            link="https://panelaaberta.unifesp.br/"
-          />
-          <Card
             picture={stopsort}
             project="Stop Sort"
             stacks="HTML • CSS • Bootstrap"
@@ -38,6 +32,12 @@ export default function Projects() {
             project="Just a To-Do"
             stacks="HTML • CSS • Tailwind"
             link="https://justtodo-gaamatoss.vercel.app/"
+          />
+          <Card
+            picture={panela}
+            project="Panela Aberta"
+            stacks="Wordpress"
+            link="https://panelaaberta.unifesp.br/"
           />
         </Fade>
       </main>

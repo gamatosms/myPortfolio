@@ -12,7 +12,7 @@ export default function Card({ picture, project, stacks, link }) {
           <span>{stacks}</span>
         </div>
         <a href={link} target="_blank">
-          <MdArrowForwardIos size="25" color="#ddd" />
+          <MdArrowForwardIos size="35" color="#ddd" />
         </a>
       </div>
     </div>

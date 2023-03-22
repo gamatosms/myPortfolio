@@ -18,7 +18,7 @@
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: start;
 }
 .card .cardDescription h1 {
