@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import devImg from "../../assets/avatarMe.png";
-import resume from "../../assets/Gabriel-Resume.pdf";
+import resume from "../../assets/GabrielResume.pdf";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Fade from "react-reveal/Fade";
 
@@ -23,7 +23,7 @@ export default function About() {
               a beautiful sunset.
             </p>
             <button className="btn-download">
-              <a href={resume} download="Gabriel-Resume">
+              <a href={resume} download="GabrielResume">
                 Download CV
               </a>
               <AiOutlineCloudDownload
