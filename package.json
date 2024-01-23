@@ -10,15 +10,15 @@
   },
   "engines": {
     "npm": ">=7.0.0",
-    "node": "16"
-  }
+    "node": "18"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-icons": "^4.4.0",
     "react-reveal": "^1.2.2",
-    "rsuite": "^5.18.0"
+    "rsuite": "^5.51.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
