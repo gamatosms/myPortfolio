@@ -22,21 +22,21 @@ export default function Home() {
             <div className="iconDiv">
               <a
                 className="linkIcon"
-                href="https://www.linkedin.com/in/gaamatoss/"
+                href="https://www.linkedin.com/in/gabrielmms/"
                 target="_blank"
               >
                 <AiFillLinkedin size="40px" />
               </a>
               <a
                 className="gitIcon"
-                href="https://github.com/gaamatoss"
+                href="https://github.com/gamatosms"
                 target="_blank"
               >
                 <AiFillGithub size="40px" />
               </a>
               <a
                 className="instaIcon"
-                href="https://instagram.com/gaamatoss"
+                href="https://instagram.com/gabrielmatosms"
                 target="_blank"
               >
                 <AiOutlineInstagram size="40px" />
